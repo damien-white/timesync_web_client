@@ -10,9 +10,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "format:check": "prettier --check '**/*.{js,json,ts,tsx}'",
-    "format:write": "prettier --write '**/*.{js,json,ts,tsx}'",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "getcfg:linter": "eslint --print-config",
+    "check:format": "prettier --check '**/*.{js,ts,tsx}'",
+    "check:linter": "eslint --ext 'js,ts,tsx' ./",
+    "check:styles": "stylelint 'src/**/*.{css,ts,tsx}'",
+    "check:types": "tsc --noEmit",
+    "check:all": "yarn check:format && yarn check:linter && yarn check:styles && yarn check:types",
+    "write:format": "prettier --write '**/*.{js,ts,tsx}'",
+    "write:linter": "eslint --fix --ext 'js,ts,tsx' ./ --max-warnings=0",
+    "write:all": "yarn write:format && yarn write:linter",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
@@ -46,7 +54,8 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0"
+    "stylelint-processor-styled-components": "^1.10.0",
+    "husky": "^6.0.0"
   },
   "browserslist": {
     "production": [

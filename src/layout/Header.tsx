@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-export function Header() {
+export function Header(): JSX.Element {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar color="primary" position="static">

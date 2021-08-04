@@ -9,7 +9,7 @@ import { Sidebar } from './layout/Sidebar';
 
 import { theme } from './theme';
 
-export const App = () => {
+export const App = (): JSX.Element => {
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
