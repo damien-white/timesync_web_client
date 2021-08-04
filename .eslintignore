@@ -1,0 +1,23 @@
+# Editor workspaces
+.idea/
+.vscode/
+
+# Build output
+build/
+dist/
+
+# Testing coverage
+coverage/
+
+# Node.js dependencies
+node_modules/
+
+# Internal specifications
+.spec/
+
+# Yarn
+.pnp.js
+yarn.lock
+
+# ESLint config
+.eslintrc.js
