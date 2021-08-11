@@ -1,8 +1,38 @@
 {
-  "processors": ["stylelint-processor-styled-components"],
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-styled-components",
-    "stylelint-config-prettier"
-  ]
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "ignoreFiles": [
+    "**/*.js",
+    "coverage/**/*",
+    "node_modules/**/*"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "color-hex-case": "lower",
+    "color-hex-length": "long",
+    "indentation": 2,
+    "no-duplicate-selectors": true,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes",
+          "composes-with"
+        ]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global"
+        ]
+      }
+    ]
+  }
 }

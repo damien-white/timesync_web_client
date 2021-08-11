@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# Run all code, style and type checks; Run formatter, linter (bail on warning)
-yarn run check:all && yarn run write:all
+# 1. Run formatter, linter (bail on warning)
+# 2. Ensure code, style and type checks pass
+yarn run write:all && yarn run check:all
