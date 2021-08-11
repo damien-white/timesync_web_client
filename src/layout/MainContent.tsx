@@ -5,5 +5,9 @@ interface Props {
 }
 
 export function MainContent({ children }: Props): JSX.Element {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <div>{children}</div>
+    </main>
+  );
 }
