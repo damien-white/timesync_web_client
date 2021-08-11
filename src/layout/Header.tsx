@@ -1,34 +1,36 @@
-import { Button } from '@material-ui/core';
-// import { styled, alpha } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Box from '@material-ui/core/Box';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import Logo from '../logo.svg';
 
 export function Header(): JSX.Element {
+  const appName = 'TimeSync';
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar color="primary" position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            size="large"
-            sx={{ marginRight: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h5" sx={{ flexGrow: 1, textTransform: 'uppercase' }}>
-            TimeSync
-          </Typography>
-          <Button color="primary" variant="outlined">
-            New Task
-          </Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <header className="navbar">
+      <nav className="navbar-nav">
+        <div className="navbar-brand">
+          <img src={Logo} height={40} alt="logo" />
+          <span>{appName}</span>
+        </div>
+        <ul className="nav-items-start">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact Us</a>
+          </li>
+        </ul>
+        <div className="spacer" />
+        <ul className="nav-items-end">
+          <li>
+            <a href="/account">Notifications</a>
+          </li>
+          <li>
+            <a href="/account">My Account</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }

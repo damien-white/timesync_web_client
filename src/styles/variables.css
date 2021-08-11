@@ -1,0 +1,46 @@
+/* Global CSS properties */
+:root {
+  /* Colors */
+  --color-primary-light: #abffe0;
+  --color-primary-base: #77faca;
+  --color-primary-dark: #42f5b1;
+  --color-primary-tinted: rgba(119, 250, 202, 0.1);
+
+  /* Background colors */
+  --color-bg-light: rgb(31, 31, 46);
+  --color-bg-base: rgb(18, 18, 34);
+  --color-bg-dark: rgb(7, 7, 18);
+
+  /* "contrast" colors (pure white / black are not used) */
+  --color-white: rgba(255, 255, 255, 0.96);
+  --color-black: rgb(7, 7, 18);
+
+  /* Text and foreground colors */
+  --color-fg-light: rgba(255, 255, 255, 0.87);
+  --color-fg-base: rgba(255, 255, 255, 0.75);
+  --color-fg-dark: rgba(255, 255, 255, 0.65);
+  --color-fg-divider: rgba(255, 255, 255, 0.15);
+
+  /* Font stack */
+  --font-family-sans-serif: 'Jost', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-monospace: ui-monospace, 'Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono',
+    'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+
+  /* Font sizes (1 rem = 10px) */
+  --font-size-h1: 4.8rem;
+  --font-size-h2: 3.8rem;
+  --font-size-h3: 3rem;
+  --font-size-h4: 2.4rem;
+  --font-size-h5: 2rem;
+  --font-size-h6: 1.8rem;
+  --font-size-base: 1.5rem;
+  --font-size-small: 1.3rem;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}

@@ -1,0 +1,10 @@
+/* Dark Fusion Systems — Radiant CSS v0.7.2 */
+
+/* Import normalize.css styles */
+@import-normalize;
+
+/* Bring in custom CSS properties from variables.css file */
+@import './variables.css';
+
+/* Normalize CSS and apply base styles */
+@import './global.css';
