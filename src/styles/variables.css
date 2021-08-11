@@ -27,15 +27,19 @@
   --font-family-monospace: ui-monospace, 'Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono',
     'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
 
-  /* Font sizes (1 rem = 10px) */
-  --font-size-h1: 4.8rem;
-  --font-size-h2: 3.8rem;
-  --font-size-h3: 3rem;
-  --font-size-h4: 2.4rem;
-  --font-size-h5: 2rem;
-  --font-size-h6: 1.8rem;
+  /* Font sizes (1rem = 10px) */
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.3rem;
   --font-size-base: 1.5rem;
-  --font-size-small: 1.3rem;
+  --font-size-h6: 1.5rem;
+  --font-size-h5: 1.7rem;
+  --font-size-h4: 2rem;
+  --font-size-h3: 2.4rem;
+  --font-size-h2: 2.9rem;
+  --font-size-h1: 3.5rem;
+  --font-size-subtitle: 4.2rem;
+  --font-size-title: 5rem;
+  --font-size-display: 5.9rem;
 
   /* Font weights */
   --font-weight-light: 300;
