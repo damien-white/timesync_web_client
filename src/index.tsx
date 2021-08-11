@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-/* Import Roboto font */
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-import '@fontsource/roboto/900.css';
+
+/* Import 'Jost' font */
+import '@fontsource/jost/300.css';
+import '@fontsource/jost/400.css';
+import '@fontsource/jost/500.css';
+import '@fontsource/jost/700.css';
+import '@fontsource/jost/900.css';
+
+import './styles/index.css';
 
 import { App } from './App';
 
